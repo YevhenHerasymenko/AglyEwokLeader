@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4544ED89850D5E4B10A1A355 /* Pods_AglyEwok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965235B043136EB470A4E32A /* Pods_AglyEwok.framework */; };
+		642A09E0FE91B9434943D75D /* Pods_AglyEwokTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADAC6E5B8A1ACFA6B2D4D85 /* Pods_AglyEwokTests.framework */; };
+		748B73252080E92C00492E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73242080E92C00492E8D /* AppDelegate.swift */; };
+		748B73272080E92C00492E8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73262080E92C00492E8D /* ViewController.swift */; };
+		748B732A2080E92C00492E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748B73282080E92C00492E8D /* Main.storyboard */; };
+		748B732C2080E92D00492E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748B732B2080E92D00492E8D /* Assets.xcassets */; };
+		748B732F2080E92D00492E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748B732D2080E92D00492E8D /* LaunchScreen.storyboard */; };
+		748B733A2080E92E00492E8D /* AglyEwokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73392080E92E00492E8D /* AglyEwokTests.swift */; };
+		748B73452080E92E00492E8D /* AglyEwokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73442080E92E00492E8D /* AglyEwokUITests.swift */; };
+		748B73AE2080E9DD00492E8D /* ChangeWindowRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73532080E9DD00492E8D /* ChangeWindowRootSegue.swift */; };
+		748B73AF2080E9DD00492E8D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73552080E9DD00492E8D /* Storyboard.swift */; };
+		748B73B12080E9DD00492E8D /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73572080E9DD00492E8D /* UserDefaults.swift */; };
+		748B73B22080E9DD00492E8D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73592080E9DD00492E8D /* RequestOperation.swift */; };
+		748B73B32080E9DD00492E8D /* NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B735A2080E9DD00492E8D /* NetworkActivityIndicator.swift */; };
+		748B73B42080E9DD00492E8D /* ParseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B735B2080E9DD00492E8D /* ParseOperation.swift */; };
+		748B73B52080E9DD00492E8D /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B735C2080E9DD00492E8D /* APIRequests.swift */; };
+		748B73B62080E9DD00492E8D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B735D2080E9DD00492E8D /* APIManager.swift */; };
+		748B73B72080E9DD00492E8D /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B735E2080E9DD00492E8D /* BasicOperation.swift */; };
+		748B73B82080E9DD00492E8D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B735F2080E9DD00492E8D /* Reachability.swift */; };
+		748B73BB2080E9DD00492E8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73622080E9DD00492E8D /* Request.swift */; };
+		748B73BC2080E9DD00492E8D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73632080E9DD00492E8D /* API.swift */; };
+		748B73BD2080E9DD00492E8D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73642080E9DD00492E8D /* NetworkError.swift */; };
+		748B73BE2080E9DD00492E8D /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73662080E9DD00492E8D /* EmptyModel.swift */; };
+		748B73D52080E9DD00492E8D /* ViewIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B737F2080E9DD00492E8D /* ViewIdentifier.swift */; };
+		748B73D62080E9DD00492E8D /* ViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73812080E9DD00492E8D /* ViewControllerModel.swift */; };
+		748B73D72080E9DD00492E8D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73822080E9DD00492E8D /* AppState.swift */; };
+		748B73D82080E9DD00492E8D /* StateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73832080E9DD00492E8D /* StateTransformer.swift */; };
+		748B73D92080E9DD00492E8D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73842080E9DD00492E8D /* Store.swift */; };
+		748B73EF2080E9DD00492E8D /* ErrorFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73A52080E9DD00492E8D /* ErrorFlow.swift */; };
+		748B73F02080E9DD00492E8D /* ErrorHandlerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B73A62080E9DD00492E8D /* ErrorHandlerController.swift */; };
+		98C4AA79B6EF6C7E71A1123D /* Pods_AglyEwokUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A78BC0DAA917F812D39D83 /* Pods_AglyEwokUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		748B73362080E92E00492E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748B73192080E92C00492E8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 748B73202080E92C00492E8D;
+			remoteInfo = AglyEwok;
+		};
+		748B73412080E92E00492E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748B73192080E92C00492E8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 748B73202080E92C00492E8D;
+			remoteInfo = AglyEwok;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C64CA25411AD17CF3078678 /* Pods-AglyEwok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AglyEwok.release.xcconfig"; path = "Pods/Target Support Files/Pods-AglyEwok/Pods-AglyEwok.release.xcconfig"; sourceTree = "<group>"; };
+		283CB188615AF9CC5A5FB1DD /* Pods-AglyEwokUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AglyEwokUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AglyEwokUITests/Pods-AglyEwokUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FE59431DB963CBF9B709095 /* Pods-AglyEwokTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AglyEwokTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AglyEwokTests/Pods-AglyEwokTests.debug.xcconfig"; sourceTree = "<group>"; };
+		748B73212080E92C00492E8D /* AglyEwok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AglyEwok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748B73242080E92C00492E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		748B73262080E92C00492E8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		748B73292080E92C00492E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		748B732B2080E92D00492E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		748B732E2080E92D00492E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		748B73302080E92D00492E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748B73352080E92E00492E8D /* AglyEwokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AglyEwokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		748B73392080E92E00492E8D /* AglyEwokTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AglyEwokTests.swift; sourceTree = "<group>"; };
+		748B733B2080E92E00492E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748B73402080E92E00492E8D /* AglyEwokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AglyEwokUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		748B73442080E92E00492E8D /* AglyEwokUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AglyEwokUITests.swift; sourceTree = "<group>"; };
+		748B73462080E92E00492E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748B73532080E9DD00492E8D /* ChangeWindowRootSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeWindowRootSegue.swift; sourceTree = "<group>"; };
+		748B73552080E9DD00492E8D /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		748B73572080E9DD00492E8D /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		748B73592080E9DD00492E8D /* RequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
+		748B735A2080E9DD00492E8D /* NetworkActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicator.swift; sourceTree = "<group>"; };
+		748B735B2080E9DD00492E8D /* ParseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseOperation.swift; sourceTree = "<group>"; };
+		748B735C2080E9DD00492E8D /* APIRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		748B735D2080E9DD00492E8D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		748B735E2080E9DD00492E8D /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
+		748B735F2080E9DD00492E8D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		748B73622080E9DD00492E8D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		748B73632080E9DD00492E8D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		748B73642080E9DD00492E8D /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		748B73662080E9DD00492E8D /* EmptyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
+		748B737F2080E9DD00492E8D /* ViewIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifier.swift; sourceTree = "<group>"; };
+		748B73812080E9DD00492E8D /* ViewControllerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerModel.swift; sourceTree = "<group>"; };
+		748B73822080E9DD00492E8D /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		748B73832080E9DD00492E8D /* StateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateTransformer.swift; sourceTree = "<group>"; };
+		748B73842080E9DD00492E8D /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		748B73A52080E9DD00492E8D /* ErrorFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorFlow.swift; sourceTree = "<group>"; };
+		748B73A62080E9DD00492E8D /* ErrorHandlerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlerController.swift; sourceTree = "<group>"; };
+		776BFC2B0CE04CC1DAC76483 /* Pods-AglyEwok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AglyEwok.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AglyEwok/Pods-AglyEwok.debug.xcconfig"; sourceTree = "<group>"; };
+		8B821F0431CA06D40D2384E9 /* Pods-AglyEwokUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AglyEwokUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AglyEwokUITests/Pods-AglyEwokUITests.release.xcconfig"; sourceTree = "<group>"; };
+		965235B043136EB470A4E32A /* Pods_AglyEwok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AglyEwok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D878DEEDDC4284A12AD8C111 /* Pods-AglyEwokTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AglyEwokTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AglyEwokTests/Pods-AglyEwokTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7A78BC0DAA917F812D39D83 /* Pods_AglyEwokUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AglyEwokUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADAC6E5B8A1ACFA6B2D4D85 /* Pods_AglyEwokTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AglyEwokTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		748B731E2080E92C00492E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544ED89850D5E4B10A1A355 /* Pods_AglyEwok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B73322080E92E00492E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642A09E0FE91B9434943D75D /* Pods_AglyEwokTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B733D2080E92E00492E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C4AA79B6EF6C7E71A1123D /* Pods_AglyEwokUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		748B73182080E92C00492E8D = {
+			isa = PBXGroup;
+			children = (
+				748B73232080E92C00492E8D /* AglyEwok */,
+				748B73382080E92E00492E8D /* AglyEwokTests */,
+				748B73432080E92E00492E8D /* AglyEwokUITests */,
+				748B73222080E92C00492E8D /* Products */,
+				97BF0CD9F5E09FACD88CB144 /* Pods */,
+				DAB085EAA758E86BD4B9A721 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		748B73222080E92C00492E8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748B73212080E92C00492E8D /* AglyEwok.app */,
+				748B73352080E92E00492E8D /* AglyEwokTests.xctest */,
+				748B73402080E92E00492E8D /* AglyEwokUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748B73232080E92C00492E8D /* AglyEwok */ = {
+			isa = PBXGroup;
+			children = (
+				748B73522080E9DD00492E8D /* Core */,
+				748B73242080E92C00492E8D /* AppDelegate.swift */,
+				748B73262080E92C00492E8D /* ViewController.swift */,
+				748B73282080E92C00492E8D /* Main.storyboard */,
+				748B732B2080E92D00492E8D /* Assets.xcassets */,
+				748B732D2080E92D00492E8D /* LaunchScreen.storyboard */,
+				748B73302080E92D00492E8D /* Info.plist */,
+			);
+			path = AglyEwok;
+			sourceTree = "<group>";
+		};
+		748B73382080E92E00492E8D /* AglyEwokTests */ = {
+			isa = PBXGroup;
+			children = (
+				748B73392080E92E00492E8D /* AglyEwokTests.swift */,
+				748B733B2080E92E00492E8D /* Info.plist */,
+			);
+			path = AglyEwokTests;
+			sourceTree = "<group>";
+		};
+		748B73432080E92E00492E8D /* AglyEwokUITests */ = {
+			isa = PBXGroup;
+			children = (
+				748B73442080E92E00492E8D /* AglyEwokUITests.swift */,
+				748B73462080E92E00492E8D /* Info.plist */,
+			);
+			path = AglyEwokUITests;
+			sourceTree = "<group>";
+		};
+		748B73522080E9DD00492E8D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				748B73532080E9DD00492E8D /* ChangeWindowRootSegue.swift */,
+				748B73542080E9DD00492E8D /* Tools */,
+				748B73582080E9DD00492E8D /* Network */,
+				748B73652080E9DD00492E8D /* Models */,
+				748B737F2080E9DD00492E8D /* ViewIdentifier.swift */,
+				748B73802080E9DD00492E8D /* ReSwift */,
+				748B73A42080E9DD00492E8D /* Error */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		748B73542080E9DD00492E8D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				748B73552080E9DD00492E8D /* Storyboard.swift */,
+				748B73572080E9DD00492E8D /* UserDefaults.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		748B73582080E9DD00492E8D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				748B73592080E9DD00492E8D /* RequestOperation.swift */,
+				748B735A2080E9DD00492E8D /* NetworkActivityIndicator.swift */,
+				748B735B2080E9DD00492E8D /* ParseOperation.swift */,
+				748B735C2080E9DD00492E8D /* APIRequests.swift */,
+				748B735D2080E9DD00492E8D /* APIManager.swift */,
+				748B735E2080E9DD00492E8D /* BasicOperation.swift */,
+				748B735F2080E9DD00492E8D /* Reachability.swift */,
+				748B73622080E9DD00492E8D /* Request.swift */,
+				748B73632080E9DD00492E8D /* API.swift */,
+				748B73642080E9DD00492E8D /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		748B73652080E9DD00492E8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				748B73662080E9DD00492E8D /* EmptyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		748B73802080E9DD00492E8D /* ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				748B73812080E9DD00492E8D /* ViewControllerModel.swift */,
+				748B73822080E9DD00492E8D /* AppState.swift */,
+				748B73832080E9DD00492E8D /* StateTransformer.swift */,
+				748B73842080E9DD00492E8D /* Store.swift */,
+			);
+			path = ReSwift;
+			sourceTree = "<group>";
+		};
+		748B73A42080E9DD00492E8D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				748B73A52080E9DD00492E8D /* ErrorFlow.swift */,
+				748B73A62080E9DD00492E8D /* ErrorHandlerController.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		97BF0CD9F5E09FACD88CB144 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				776BFC2B0CE04CC1DAC76483 /* Pods-AglyEwok.debug.xcconfig */,
+				1C64CA25411AD17CF3078678 /* Pods-AglyEwok.release.xcconfig */,
+				2FE59431DB963CBF9B709095 /* Pods-AglyEwokTests.debug.xcconfig */,
+				D878DEEDDC4284A12AD8C111 /* Pods-AglyEwokTests.release.xcconfig */,
+				283CB188615AF9CC5A5FB1DD /* Pods-AglyEwokUITests.debug.xcconfig */,
+				8B821F0431CA06D40D2384E9 /* Pods-AglyEwokUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DAB085EAA758E86BD4B9A721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				965235B043136EB470A4E32A /* Pods_AglyEwok.framework */,
+				FADAC6E5B8A1ACFA6B2D4D85 /* Pods_AglyEwokTests.framework */,
+				E7A78BC0DAA917F812D39D83 /* Pods_AglyEwokUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		748B73202080E92C00492E8D /* AglyEwok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 748B73492080E92E00492E8D /* Build configuration list for PBXNativeTarget "AglyEwok" */;
+			buildPhases = (
+				D9EAA8735BA2556B3EC67BC0 /* [CP] Check Pods Manifest.lock */,
+				748B731D2080E92C00492E8D /* Sources */,
+				748B731E2080E92C00492E8D /* Frameworks */,
+				748B731F2080E92C00492E8D /* Resources */,
+				43D0AB63CBDC9F7F992A3632 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AglyEwok;
+			productName = AglyEwok;
+			productReference = 748B73212080E92C00492E8D /* AglyEwok.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748B73342080E92E00492E8D /* AglyEwokTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 748B734C2080E92E00492E8D /* Build configuration list for PBXNativeTarget "AglyEwokTests" */;
+			buildPhases = (
+				59E61E9F1BFB2BE1EF2AF526 /* [CP] Check Pods Manifest.lock */,
+				748B73312080E92E00492E8D /* Sources */,
+				748B73322080E92E00492E8D /* Frameworks */,
+				748B73332080E92E00492E8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				748B73372080E92E00492E8D /* PBXTargetDependency */,
+			);
+			name = AglyEwokTests;
+			productName = AglyEwokTests;
+			productReference = 748B73352080E92E00492E8D /* AglyEwokTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		748B733F2080E92E00492E8D /* AglyEwokUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 748B734F2080E92E00492E8D /* Build configuration list for PBXNativeTarget "AglyEwokUITests" */;
+			buildPhases = (
+				6163DE5D39573139721ACCF7 /* [CP] Check Pods Manifest.lock */,
+				748B733C2080E92E00492E8D /* Sources */,
+				748B733D2080E92E00492E8D /* Frameworks */,
+				748B733E2080E92E00492E8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				748B73422080E92E00492E8D /* PBXTargetDependency */,
+			);
+			name = AglyEwokUITests;
+			productName = AglyEwokUITests;
+			productReference = 748B73402080E92E00492E8D /* AglyEwokUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748B73192080E92C00492E8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = AglyEwok;
+				TargetAttributes = {
+					748B73202080E92C00492E8D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					748B73342080E92E00492E8D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 748B73202080E92C00492E8D;
+					};
+					748B733F2080E92E00492E8D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 748B73202080E92C00492E8D;
+					};
+				};
+			};
+			buildConfigurationList = 748B731C2080E92C00492E8D /* Build configuration list for PBXProject "AglyEwok" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 748B73182080E92C00492E8D;
+			productRefGroup = 748B73222080E92C00492E8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748B73202080E92C00492E8D /* AglyEwok */,
+				748B73342080E92E00492E8D /* AglyEwokTests */,
+				748B733F2080E92E00492E8D /* AglyEwokUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		748B731F2080E92C00492E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748B732F2080E92D00492E8D /* LaunchScreen.storyboard in Resources */,
+				748B732C2080E92D00492E8D /* Assets.xcassets in Resources */,
+				748B732A2080E92C00492E8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B73332080E92E00492E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B733E2080E92E00492E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43D0AB63CBDC9F7F992A3632 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AglyEwok/Pods-AglyEwok-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AglyEwok/Pods-AglyEwok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E61E9F1BFB2BE1EF2AF526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AglyEwokTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6163DE5D39573139721ACCF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AglyEwokUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EAA8735BA2556B3EC67BC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AglyEwok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		748B731D2080E92C00492E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748B73BB2080E9DD00492E8D /* Request.swift in Sources */,
+				748B73D92080E9DD00492E8D /* Store.swift in Sources */,
+				748B73D82080E9DD00492E8D /* StateTransformer.swift in Sources */,
+				748B73D62080E9DD00492E8D /* ViewControllerModel.swift in Sources */,
+				748B73B42080E9DD00492E8D /* ParseOperation.swift in Sources */,
+				748B73AF2080E9DD00492E8D /* Storyboard.swift in Sources */,
+				748B73B72080E9DD00492E8D /* BasicOperation.swift in Sources */,
+				748B73D52080E9DD00492E8D /* ViewIdentifier.swift in Sources */,
+				748B73B52080E9DD00492E8D /* APIRequests.swift in Sources */,
+				748B73F02080E9DD00492E8D /* ErrorHandlerController.swift in Sources */,
+				748B73AE2080E9DD00492E8D /* ChangeWindowRootSegue.swift in Sources */,
+				748B73EF2080E9DD00492E8D /* ErrorFlow.swift in Sources */,
+				748B73B62080E9DD00492E8D /* APIManager.swift in Sources */,
+				748B73B12080E9DD00492E8D /* UserDefaults.swift in Sources */,
+				748B73272080E92C00492E8D /* ViewController.swift in Sources */,
+				748B73252080E92C00492E8D /* AppDelegate.swift in Sources */,
+				748B73B32080E9DD00492E8D /* NetworkActivityIndicator.swift in Sources */,
+				748B73B22080E9DD00492E8D /* RequestOperation.swift in Sources */,
+				748B73BD2080E9DD00492E8D /* NetworkError.swift in Sources */,
+				748B73D72080E9DD00492E8D /* AppState.swift in Sources */,
+				748B73BC2080E9DD00492E8D /* API.swift in Sources */,
+				748B73BE2080E9DD00492E8D /* EmptyModel.swift in Sources */,
+				748B73B82080E9DD00492E8D /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B73312080E92E00492E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748B733A2080E92E00492E8D /* AglyEwokTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B733C2080E92E00492E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748B73452080E92E00492E8D /* AglyEwokUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		748B73372080E92E00492E8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 748B73202080E92C00492E8D /* AglyEwok */;
+			targetProxy = 748B73362080E92E00492E8D /* PBXContainerItemProxy */;
+		};
+		748B73422080E92E00492E8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 748B73202080E92C00492E8D /* AglyEwok */;
+			targetProxy = 748B73412080E92E00492E8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		748B73282080E92C00492E8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				748B73292080E92C00492E8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		748B732D2080E92D00492E8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				748B732E2080E92D00492E8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		748B73472080E92E00492E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		748B73482080E92E00492E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		748B734A2080E92E00492E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776BFC2B0CE04CC1DAC76483 /* Pods-AglyEwok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C432KMQ4BE;
+				INFOPLIST_FILE = AglyEwok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aglyewokbar.info;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		748B734B2080E92E00492E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C64CA25411AD17CF3078678 /* Pods-AglyEwok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C432KMQ4BE;
+				INFOPLIST_FILE = AglyEwok/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aglyewokbar.info;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		748B734D2080E92E00492E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE59431DB963CBF9B709095 /* Pods-AglyEwokTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C432KMQ4BE;
+				INFOPLIST_FILE = AglyEwokTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aglyewokbar.info.AglyEwokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AglyEwok.app/AglyEwok";
+			};
+			name = Debug;
+		};
+		748B734E2080E92E00492E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D878DEEDDC4284A12AD8C111 /* Pods-AglyEwokTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C432KMQ4BE;
+				INFOPLIST_FILE = AglyEwokTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aglyewokbar.info.AglyEwokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AglyEwok.app/AglyEwok";
+			};
+			name = Release;
+		};
+		748B73502080E92E00492E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283CB188615AF9CC5A5FB1DD /* Pods-AglyEwokUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C432KMQ4BE;
+				INFOPLIST_FILE = AglyEwokUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aglyewokbar.info.AglyEwokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AglyEwok;
+			};
+			name = Debug;
+		};
+		748B73512080E92E00492E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B821F0431CA06D40D2384E9 /* Pods-AglyEwokUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C432KMQ4BE;
+				INFOPLIST_FILE = AglyEwokUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aglyewokbar.info.AglyEwokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AglyEwok;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		748B731C2080E92C00492E8D /* Build configuration list for PBXProject "AglyEwok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748B73472080E92E00492E8D /* Debug */,
+				748B73482080E92E00492E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		748B73492080E92E00492E8D /* Build configuration list for PBXNativeTarget "AglyEwok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748B734A2080E92E00492E8D /* Debug */,
+				748B734B2080E92E00492E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		748B734C2080E92E00492E8D /* Build configuration list for PBXNativeTarget "AglyEwokTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748B734D2080E92E00492E8D /* Debug */,
+				748B734E2080E92E00492E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		748B734F2080E92E00492E8D /* Build configuration list for PBXNativeTarget "AglyEwokUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748B73502080E92E00492E8D /* Debug */,
+				748B73512080E92E00492E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748B73192080E92C00492E8D /* Project object */;
+}
